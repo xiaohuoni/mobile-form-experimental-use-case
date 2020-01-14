@@ -2,7 +2,9 @@ import { RouterTypes, AnyAction, match, EffectsCommandMap } from 'alita';
 import { IndexModelState } from './index';
 
 import { AntdModelState } from './antd';
+import { FieldModelState } from './field';
 export {
+	FieldModelState,
 	AntdModelState,
   IndexModelState,
 };
@@ -39,6 +41,8 @@ export type Dispatch = <P = any, C = (payload: P) => void>(action: {
 }) => any;
 
 export interface Loading {
+	field?: boolean;
+
 	antd?: boolean;
 
   global: boolean;
@@ -49,6 +53,8 @@ export interface Loading {
 }
 
 export interface ConnectState {
+	field?: FieldModelState;
+
 	antd?: AntdModelState;
 
   index?: IndexModelState;
