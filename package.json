@@ -21,6 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "alita": "1.4.0-alpha.0",
+    "antd": "4.0.0-rc.1",
     "dva": "^2.4.1",
     "eslint": "5.10.0",
     "eslint-config-umi": "^1.6.0",
